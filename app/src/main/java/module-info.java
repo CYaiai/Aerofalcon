@@ -1,7 +1,7 @@
-module com.aerofalcon.aerofalcon {
+module org.aerofalcon {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.aerofalcon.aerofalcon to javafx.fxml;
-    exports com.aerofalcon.aerofalcon;
+    opens org.aerofalcon to javafx.fxml;
+    exports org.aerofalcon;
 }

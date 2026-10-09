@@ -1,4 +1,4 @@
-package com.aerofalcon.aerofalcon;
+package org.aerofalcon;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
