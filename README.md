@@ -1,32 +1,24 @@
-# Aerofalcon
+# 游隼 Aerofalcon
 
-> JavaFX + Maven 双层壳工程骨架
+> 现代加密 Web 远程管理终端 —— 面向授权渗透测试与红队评估的加密通信管理工具
 
-## 目录结构
+**Version** V1.0.2 · **Author** CYAA · **Requires** JDK 17+
 
-```
-Aerofalcon/
-├─ app/                  Maven 工程（真正的代码在这里）
-│  ├─ pom.xml
-│  ├─ mvnw / mvnw.cmd    Maven Wrapper
-│  └─ src/main/java/...
-├─ config/               运行时配置（gitignored）
-├─ logs/                 运行日志（gitignored）
-├─ plugins/              插件目录
-├─ docs/                 开发文档
-├─ Aerofalcon.bat        启动器
-├─ install.bat           安装/构建脚本
-└─ README.md
-```
+## ⚠️ 免责声明
 
-## 开发
+本工具仅供**已授权**的安全测试、渗透测试与安全研究使用。使用者必须事先获得目标系统所有者的明确书面授权，并严格遵守所在地区法律法规。严禁用于任何未授权访问、破坏行为或其他非法用途。因使用本工具产生的一切法律后果由使用者自行承担。
 
-用 IDEA **Open** 打开 `C:\Users\1\Desktop\Aerofalcon\app\pom.xml` 作为工程根（不是打开外层 Aerofalcon 目录）。
+## 功能特性
 
-运行：
-```
-cd app
-mvnw.cmd javafx:run
-```
+- **多种加密器** —— RCCS / BDE / PPSR 等 14 种独立加密体系，支持组合加密、深度混淆与乱序
+- **八种报文传输** —— KV / JSON / XML / 分片 / 乱序帧等多模式编码，对抗流量审计
+- **流量拟真** —— UA / Client-Hints / Referer / Origin 全链路伪装，支持流量画像填充
+- **TLS 指纹** —— xytls 转发器（uTLS Chrome 指纹 + HTTP/2）
+- **SOCKS 隧道** —— 站点级 SOCKS5 隧道与多级代理
+- **多系统支持** —— Windows / Linux / macOS 命令执行与载荷自适应
+- **内存马自装载** —— Filter 型内存马一键装载
+- **插件系统** —— Java 插件动态扩展（内置 Example 示例插件）
+- **工具箱** —— AES / DES / RC4 / Base32 / JWT 加解密、端口速查、UA 速查
+- **日志中心** —— 流量历史 + 敏感操作审计
 
-要求：JDK 17+
+**再次提醒**：请在法律允许的范围内，仅对获得授权的目标使用本工具。
